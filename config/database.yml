@@ -12,15 +12,6 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
-development:
-  adapter:  postgresql
-  host:     localhost
-  encoding: unicode
-  database: tasteme_development
-  pool:     5
-  username: bencoullie
-  password: 
-  template: template0
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -40,22 +31,21 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: tasteme_development
+  pool: 5
+
 test:
-  adapter:  postgresql
-  host:     localhost
+  adapter: postgresql
   encoding: unicode
   database: tasteme_test
-  pool:     5
-  username: bencoullie
-  password: 
-  template: template0
+  pool: 5
 
 production:
-  adapter:  postgresql
-  host:     localhost
+  adapter: postgresql
   encoding: unicode
   database: tasteme_production
-  pool:     5
-  username: bencoullie
-  password: 
-  template: template0
+  pool: 5

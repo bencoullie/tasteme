@@ -19,6 +19,9 @@ gem 'high_voltage'
 gem 'pg'
 gem 'puma'
 gem 'simple_form'
+gem 'materialize-sass'
+gem 'animate-rails'
+gem 'perfect-scrollbar-rails'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
